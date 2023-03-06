@@ -803,7 +803,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: rgb(41, 95, 188);
 }
 
 .portfolio #portfolio-flters li:last-child {
