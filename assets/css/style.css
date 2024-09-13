@@ -22,7 +22,7 @@ body::before {
   background-image:linear-gradient(
     rgb(11 25 48), 
     rgba(46, 184, 117, 0.11)
-  ), url("../img/portofolio.jpg");
+  ), url("../img/portfolio.jpg");
   /* background: #040404 url("../img/use2.jpg") top right no-repeat; */
   background-size: cover;
   left: 0;
@@ -358,7 +358,7 @@ section.section-show {
 }
 
 section .container {
-  background: black;
+  background: #000000bf;
   padding: 30px;
 }
 
