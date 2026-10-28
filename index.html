@@ -3,772 +3,436 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Isaac T. Gaius</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Isaac Gaius — Software Engineer</title>
+  <meta name="description" content="Isaac Gaius is a software engineer and computer engineer focused on web development, practical software solutions, and computational simulation.">
+  <meta name="keywords" content="Isaac Gaius, software engineer, computer engineer, web developer, React, Laravel, PHP, Python, MySQL">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Isaac Gaius — Software Engineer">
+  <meta property="og:description" content="Building digital solutions that work. Web development, practical software, and computational simulation.">
+  <meta property="og:type" content="website">
 
-  <!-- Favicons -->
   <link href="assets/img/Gaius.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/custom.css">
-
-  <!-- =======================================================
-  * Template Name: Personal - v4.10.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/portfolio.css" rel="stylesheet">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
 
+  <!-- Icon sprite (Lucide-style, 24px grid) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10M7 17 17 7"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+      <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Isaac Gaius — home">
+        <span class="brand-mark" aria-hidden="true">IG</span>
+        <span>Isaac Gaius</span>
+      </a>
 
-      <h1><a href="index.html">Isaac Gaius</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Software Developer</span></h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume" class="btn btn-sm btn-resume">Resume</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
-      <div class="social-links">
-        <a href="https://twitter.com/gaiushighzik" class="twitter"><i class="bi bi-twitter"></i></a>
-        <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
-        <a href="https://www.instagram.com/gaiushigh_zeek/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/isaac-gaius-344b59221/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <main id="main">
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p class="py-2">Learn more about me</p>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/portfolio.jpg" class="img-fluid _0resus" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Full-Stack Web-Developer</h3>
-          <!-- <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p> -->
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 October</span></li>
-                <li class="d-none"><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 9032 683755</span></li>
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Benin, Nigeria</span></li> -->
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Engineering (B.ENG)</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>isaacgaius1999@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
-            </div>
+    <!-- ======= Hero ======= -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Software Engineer</span>
+          <h1>Building <span class="accent">Digital Solutions</span> That Work.</h1>
+          <p class="hero-text">
+            I'm Isaac Gaius, a software engineer and computer engineer focused on web development,
+            practical software solutions, and computational simulation.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore My Work
+              <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
           </div>
-          <p>
-  A Computer Engineering graduate from the University of Benin (Second Class Upper), I combine rigorous technical foundations with a forward-thinking approach to software development. My academic journey equipped me with deep insights into systems architecture, digital innovation, and emerging technologies including artificial intelligence.
-</p>
-<p>
-  Since graduation, I've cultivated expertise across the full-stack development spectrum while actively exploring the transformative potential of AI and machine learning. My professional trajectory reflects a commitment to architecting scalable solutions that leverage cutting-edge technologies—whether through intelligent automation, AI-driven applications, or thoughtfully designed digital ecosystems. I believe deeply in synergizing human creativity with computational intelligence to solve complex problems.
-</p>
-<p>
-  My intellectual pursuits extend beyond code. I'm an avid writer and researcher with a keen interest in AI ethics, computational thinking, and emerging technology paradigms. Reading spans technical literature and speculative thought—shaping not just my technical acumen, but my vision for technology's role in society.
-</p>
-<p>
-  I'm dedicated to fostering innovation within communities, mentoring the next generation of technologists, and building transformative solutions that transcend conventional boundaries. My mission is to create meaningful impact through the thoughtful intersection of human ingenuity and artificial intelligence.
-</p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Bootstrap<i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Tailwind CSS<i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Laravel<i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">React<i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <!-- <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>End Interests -->
-
-
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Summary</h3>
-          <div class="resume-item pb-0">
-            <h4>Isaac T Gaius</h4>
-            <p><em>Innovative and deadline-driven Web Developer with 4+ years of experience designing and developing websites for clients.</em></p>
-            
-            <!-- <ul style="list-style-type: none;"> -->
-              <span> <i class="bi bi-geo-fill"></i></span><span class="ms-2">Ugbowo, Edo State, Nigeria.</span>
-              <h6 class="mt-2"><span class="me-2"><i class="bi bi-telephone-fill"></i></span> +23490 326 837 55</h6>
-              <h6 class="mt-2"><span class="me-2"><i class="bi bi-envelope-fill"></i></span>isaacgaius1999@gmail.com</h6>
-            <!-- </ul> -->
-            
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Engineering (B.ENG)</h4>
-            <p><em>Graduate of Computer Engineering</em></p>
-            <h5>2015 - 2021</h5>
-            <ul>
-              <li>Fuzzy Logic.</li>
-              <li>Installation of electrical and ICT devices.</li>
-              <li>Robotics.</li>
-              <li>Software Development.</li>
-              <li>Data And Communication Systems.</li>
-            </ul>
-            <!-- <p><em>University of Benin, Benin, Edo State, Nigeria.</em></p> -->
-            <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
-          </div>
-          <div class="resume-item">
-            <h4>Graduate of computer repairs and maintenance.</h4>
-            <h5>July 2020 - December 2020</h5>
-            <p><em>CTR TECH (CRBN 563929), Sapele, Delta State, Nigeria</em></p>
-            <ul>
-              <li>Repair and maintenance of computer hardware and its peripherals.</li>
-              <li> Troubleshooting faulty system components and proferring solutions which include part servicing and replacement.</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Website Development</h4>
-            <h5>January 2022 - June 2022</h5>
-            <p><em>Brykiva Solutions, Benin City, Edo State</em></p>
-            <a href="assets/certificate/web_development.pdf" target="_blank" class="_0cert">View Certificate</a>
-            <ul class="mt-3">
-              <li>HTML, CSS, JavaScript, Bootstrap, React</li>
-              <li>PHP, Laravel Framework</li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Content Writing</h4>
-            <h5>January 2025</h5>
-            <p><em>21 Days Content Writing bootcamp</em></p>
-            <style>
-              ._0cert{
-                background-color: white;
-                color: black;
-                padding: 8px;
-              }
-            </style>
-            <a href="assets/certificate/certificate.jpg" target="_blank" class="_0cert">View Certificate</a>
-            <!-- <ul>
-              <li>HTML, CSS, JavaScript, Bootstrap, React</li>
-              <li>PHP, Laravel Framework</li>
-            </ul> -->
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Research and Development</h4>
-            <p><em>Paetech Services, Ohio, USA (Contract)</em></p>
-            <h5>May 2025 - Present</h5>
-            <p>
-            <ul>
-              <li>Research Associate</li>
-              <li>Simulations Engineer, ANSYS Software</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Software lead, Tutor</h4>
-            <p><em>Warri Tech Hub, Warri, Delta State, Nigeria.</em></p>
-            <h5>February 2025 - April 2025</h5>
-            <p>
-            <ul>
-              <li>Development of company platform for online visibility</li>
-              <li>Mentoring Students in the field of tech as they kickoff their journey</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Front-End Engineer</h4>
-            <p><em>Just Wallet, <a href="https://justwallet.com/" style="color: pink;">justwallet.com</a>, 401 Bay Street, Suite 16 Toronto, ON. M5H 2Y4</em></p>
-            <h5>December 2023 - April 2024</h5>
-            <p>
-            <ul>
-              <li>Creating Intuitive User Interface</li>
-              <li>Web Optimization cross platform</li>
-              <li>Responsiveness streamlining </li>
-              <li>Collaboration with product designers and backend engineers</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Web Development Tutor</h4>
-            <p><em> Brykiva Solutions Benin City, Edo State </em></p>
-            <h5>June 2023 - December 2023</h5>
-            <p>
-            <ul>
-              <li>Tutor of Front-End Web Development: HTML, CSS, Javascript, Bootstrap.</li>
-              <li>Mentoring Students on projects assigned to them for swift and good delivery.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>IT Support and Network Engineer Assistant.</h4>
-            <p><em>Nigerian Gas Company Limited (NGC), Warri, Delta State, Nigeria. </em></p>
-            <h5>August 2019 - December 2019</h5>
-            
-            <p>
-            <ul>
-              <li>Repair and maintenance of computer hardware and it's peripherals.</li>
-              <li>Help Desk Support: Swift response to company staffs having issue with their devices.</li>
-              <li>Installations of Access points to connect users to the network (Zeta-Web).</li>
-              <li>Connecting users to routers via their Media Access Control (MAC) addresses.</li>
-              <li>Regular check of server room temperature readings as well as maintenance.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>IT support and Maintenance engineer</h4>
-            <p><em> CTR TECH (CRBN 563929) Sapele, Delta State. </em></p>
-            <h5>July 2020 - September 2020</h5>
-            
-            <p>
-            <ul>
-              <li>Repair and maintenance of computer hardware and it's peripherals.</li>
-              <li>Troubleshooting faulty system coomponents and proferring solutions which include part servicing and replacement.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>IT Support and Network Engineer Assistant.</h4>
-            <p><em>Nigerian Gas Company Limited (NGC), Warri, Delta State, Nigeria. </em></p>
-            <h5>August 2019 - December 2019</h5>
-            
-            <p>
-            <ul>
-              <li>Repair and maintenance of computer hardware and it's peripherals.</li>
-              <li>Help Desk Support: Swift response to company staffs having issue with their devices.</li>
-              <li>Installations of Access points to connect users to the network (Zeta-Web).</li>
-              <li>Connecting users to routers via their Media Access Control (MAC) addresses.</li>
-              <li>Regular check of server room temperature readings as well as maintenance.</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Web Development.</a></h4>
-            <p>Full-Stack Web Developer with 3+ years of experience. Building Websites for clients with Industry standard procedure and swift delivery of jobs.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Tutor</a></h4>
-            <p>Teaching students the necessary tools(programming skills) to navigate their way in the tech industry.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Mentoring Students.</a></h4>
-            <p>Guiding tech enthusiasts in the field, and aiding them to be better.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Community Manager.</a></h4>
-            <p>Effective management of community and follow up on community members.</p>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Portfolio</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <!-- <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li> -->
-            <li data-filter="" class="filter-active" style="color: white;">Web</li>
+          <ul class="tech-row" aria-label="Core technologies">
+            <li class="label">Works with</li>
+            <li><span class="chip chip-plain">React</span></li>
+            <li><span class="chip chip-plain">Laravel</span></li>
+            <li><span class="chip chip-plain">PHP</span></li>
+            <li><span class="chip chip-plain">Python</span></li>
+            <li><span class="chip chip-plain">MySQL</span></li>
           </ul>
         </div>
+
+        <div class="hero-visual">
+          <div class="portrait">
+            <img src="assets/img/portfolio.jpg" alt="Portrait of Isaac Gaius" width="1624" height="2276" fetchpriority="high">
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="row portfolio-container">
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/mudascuttinz.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: #ce9c6b;">MudazCutz -  Mobile Barbing Service</h4>
-              <p style="text-transform: lowercase;"><a href="https://mudascutz.com/"><u>mudascutz.com</u></a></p>
-              <p style="text-transform: lowercase;" class="mt-3">A booking platform to secure the services of a barber. Built with HTML, CSS, JavaScript, Laravel Framework</p>
-            </div>
-          </div>
+    <!-- ======= About ======= -->
+    <section id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2 class="section-title">Engineering rigor, applied to software.</h2>
         </div>
 
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/surevett.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(52, 152, 219);">SureVetted</h4>
-              <p style="text-transform: lowercase;"><a href="https://surevetted.com/"><u>surevetted.com</u></a></p>
-              <p style="text-transform: lowercase;" class="mt-3">Nigeria's trusted employment verification database. Helping employers digitise and share verified exit data, creating verified exit records that bring peace of mind to every hiring decision.</p>
-            </div>
+        <div class="reveal">
+          <div class="about-body">
+            <p>
+              I'm a <strong>Computer Engineering graduate</strong> of the University of Benin (Second Class Upper).
+              My training in systems, digital design and emerging technologies gives me a solid foundation for
+              building dependable software.
+            </p>
+            <p>
+              Since graduating I've worked across the full web stack, with <strong>React, Laravel and PHP</strong>,
+              while also working in <strong>simulation engineering</strong> with ANSYS. I enjoy solving practical
+              problems and breaking complex ones into clear, maintainable solutions.
+            </p>
+            <p>
+              Beyond code, I write and research on AI ethics and computational thinking, and I mentor people who are
+              starting out in tech.
+            </p>
           </div>
-        </div>
 
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/mosaic.png" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(200, 140, 80);">DeMosaic Homes</h4>
-              <p style="text-transform: lowercase;"><a href="https://demosaichomes.com/"><u>demosaichomes.com</u></a></p>
-              <p style="text-transform: lowercase;" class="mt-3">A luxury real estate platform showcasing premium properties. Pioneering excellence in real estate development with award-winning designs and innovative architectural solutions. Built with React and Laravel Framework</p>
-            </div>
-          </div>
+          <dl class="facts">
+            <div class="fact"><dt>Degree</dt><dd>B.Eng, Computer Engineering</dd></div>
+            <div class="fact"><dt>Location</dt><dd>Edo State, Nigeria</dd></div>
+            <div class="fact"><dt>Focus</dt><dd>Web, software &amp; simulation</dd></div>
+            <div class="fact"><dt>Freelance</dt><dd>Available</dd></div>
+          </dl>
         </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/binary.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(117,174,51);">Binary Code</h4>
-              <p style="text-transform: lowercase;"><a href="https://binarynft-test.netlify.app/">https://binarynft-test.netlify.app/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/binary.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Binary NFT" style="color: rgb(117,174,51);"><i class="bx bx-plus"></i></a>
-                <a href="binarynft.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(117,174,51);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/pippo.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(47,177,91);">Pippo Cab</h4>
-              <p style="text-transform: lowercase;"><a href="https://pippowebtest.netlify.app/">https://pippowebtest.netlify.app/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/pippo.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/loca.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(236,146,49);">LocaMobile</h4>
-              <p style="text-transform: lowercase;"><a href="https://locapayprev.netlify.app/">https://locapayprev.netlify.app/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/loca.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/facespf.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: rgb(197,143,255);">NFTFaces</h4>
-              <p style="text-transform: lowercase;"><a href="https://nftfaces.netlify.app/">https://nftfaces.netlify.app/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/facespf.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/jamsta.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: white;">Jamstar</h4>
-              <p style="text-transform: lowercase;"><a href="https://jamstarprev.netlify.app/">https://jamstarprev.netlify.app/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/jamsta.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap modern-card">
-            <img src="assets/img/wedding.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: white;">Ezekiel and Amaoge</h4>
-              <p style="text-transform: lowercase;"><a href="https://ezekielandamaoge.com/">https://ezekielandamaoge.com/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/wedding.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/jw.PNG" class="w-100" alt="">
-            <div class="portfolio-info">
-              <h4 style="color: white;">Just Wallet</h4>
-              <p style="text-transform: lowercase;"><a href="https://justwallet.com/">https://justwallet.com/</a></p>
-              <div class="portfolio-links d-none">
-                <a href="assets/img/jw.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Pippo Cabtest" style="color: rgb(47,177,91);"><i class="bx bx-plus"></i></a>
-                <a href="pippo.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details" style="color: rgb(47,177,91);"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-          
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-          
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            
-          </div>
-        </div>
-
       </div>
+    </section>
 
+    <!-- ======= Projects ======= -->
+    <section id="projects" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-lead">A selection of websites and web applications I've built.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="card reveal">
+            <div class="card-media card-media-text">
+              <img src="assets/img/asanya_logo%20(1).png" alt="ASANYA website preview" loading="lazy" onerror="this.remove()">
+              <span aria-hidden="true">ASANYA</span>
+            </div>
+            <div class="card-body">
+              <h3>ASANYA</h3>
+              <p class="card-desc">A partner-relationship platform that helps businesses manage the partners who already open doors for them, or access partners with the relationships they need to reach customers.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://useasanya.com/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/surevett.PNG" alt="SureVetted website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>SureVetted</h3>
+              <p class="card-desc">Nigeria's employment verification database, helping employers digitise and share verified exit data for confident hiring decisions.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://surevetted.com/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/mosaic.PNG" alt="DeMosaic Homes website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>DeMosaic Homes</h3>
+              <p class="card-desc">A real estate platform showcasing premium properties and architectural design.</p>
+              <div class="card-tags"><span class="chip">React</span><span class="chip">Laravel</span></div>
+              <div class="card-links">
+                <a class="link-arrow" href="https://demosaichomes.com/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/binary.PNG" alt="Binary Code website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Binary Code</h3>
+              <p class="card-desc">Web project preview.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://binarynft-test.netlify.app/" target="_blank" rel="noopener">Live preview <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/pippo.PNG" alt="Pippo Cab website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Pippo Cab</h3>
+              <p class="card-desc">Web project preview.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://pippowebtest.netlify.app/" target="_blank" rel="noopener">Live preview <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/loca.PNG" alt="LocaMobile website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>LocaMobile</h3>
+              <p class="card-desc">Web project preview.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://locapayprev.netlify.app/" target="_blank" rel="noopener">Live preview <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/facespf.PNG" alt="NFTFaces website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>NFTFaces</h3>
+              <p class="card-desc">Web project preview.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://nftfaces.netlify.app/" target="_blank" rel="noopener">Live preview <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media"><img src="assets/img/jamsta.PNG" alt="Jamstar website preview" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Jamstar</h3>
+              <p class="card-desc">Web project preview.</p>
+              <div class="card-links">
+                <a class="link-arrow" href="https://jamstarprev.netlify.app/" target="_blank" rel="noopener">Live preview <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Skills ======= -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Toolkit</span>
+          <h2 class="section-title">Skills &amp; technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg>Frontend</h3>
+            <ul class="chips">
+              <li><span class="chip">React</span></li><li><span class="chip">JavaScript</span></li>
+              <li><span class="chip">HTML</span></li><li><span class="chip">CSS</span></li>
+              <li><span class="chip">Bootstrap</span></li><li><span class="chip">Tailwind CSS</span></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg>Backend</h3>
+            <ul class="chips">
+              <li><span class="chip">Laravel</span></li><li><span class="chip">PHP</span></li><li><span class="chip">REST APIs</span></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg>Databases</h3>
+            <ul class="chips"><li><span class="chip">MySQL</span></li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg>Additional</h3>
+            <ul class="chips">
+              <li><span class="chip">Python</span></li><li><span class="chip">AWS</span></li><li><span class="chip">ANSYS simulation</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Resume ======= -->
+    <section id="resume" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Resume</span>
+          <h2 class="section-title">Experience &amp; education</h2>
+        </div>
+
+        <div class="resume-grid">
+          <div class="reveal">
+            <h3 class="col-title">Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">May 2025 – Present</div>
+                <div>
+                  <h4>Research and Development</h4>
+                  <p class="timeline-org">Paetech Services, Ohio, USA (Contract)</p>
+                  <ul><li>Research Associate</li><li>Simulations Engineer, ANSYS Software</li></ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Feb 2025 – Apr 2025</div>
+                <div>
+                  <h4>Software Lead, Tutor</h4>
+                  <p class="timeline-org">Warri Tech Hub, Warri, Delta State, Nigeria</p>
+                  <ul><li>Developed the company platform for online visibility</li><li>Mentored students starting their tech journey</li></ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Dec 2023 – Apr 2024</div>
+                <div>
+                  <h4>Front-End Engineer</h4>
+                  <p class="timeline-org"><a href="https://justwallet.com/" target="_blank" rel="noopener">Just Wallet</a>, Toronto, ON</p>
+                  <ul>
+                    <li>Creating intuitive user interfaces</li><li>Cross-platform web optimization</li>
+                    <li>Responsiveness streamlining</li><li>Collaboration with product designers and backend engineers</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Jun 2023 – Dec 2023</div>
+                <div>
+                  <h4>Web Development Tutor</h4>
+                  <p class="timeline-org">Brykiva Solutions, Benin City, Edo State</p>
+                  <ul><li>Taught front-end web development: HTML, CSS, JavaScript, Bootstrap</li><li>Mentored students on assigned projects</li></ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Jul 2020 – Sep 2020</div>
+                <div>
+                  <h4>IT Support and Maintenance Engineer</h4>
+                  <p class="timeline-org">CTR TECH, Sapele, Delta State</p>
+                  <ul><li>Repair and maintenance of computer hardware and peripherals</li><li>Troubleshooting faulty components, including servicing and replacement</li></ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Aug 2019 – Dec 2019</div>
+                <div>
+                  <h4>IT Support and Network Engineer Assistant</h4>
+                  <p class="timeline-org">Nigerian Gas Company Limited (NGC), Warri, Delta State</p>
+                  <ul>
+                    <li>Hardware repair and maintenance; help desk support for staff</li>
+                    <li>Installed access points and connected users to the network</li>
+                    <li>Regular server room temperature checks and maintenance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <h3 class="col-title">Education &amp; training</h3>
+            <div class="side-block">
+              <h4>B.Eng, Computer Engineering</h4>
+              <p>University of Benin · 2015 – 2021</p>
+            </div>
+            <div class="side-block">
+              <h4>Website Development</h4>
+              <p>Brykiva Solutions · Jan – Jun 2022</p>
+              <a class="link-arrow" style="margin-top:8px" href="assets/certificate/web_development.pdf" target="_blank" rel="noopener">View certificate <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+            <div class="side-block">
+              <h4>Computer Repairs &amp; Maintenance</h4>
+              <p>CTR TECH · Jul – Dec 2020</p>
+            </div>
+            <div class="side-block">
+              <h4>Content Writing Bootcamp</h4>
+              <p>21 days · January 2025</p>
+              <a class="link-arrow" style="margin-top:8px" href="assets/certificate/certificate.jpg" target="_blank" rel="noopener">View certificate <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title">Let's build something useful together.</h2>
+          <p class="section-lead">
+            I'm open to software projects, collaboration, and engineering solutions. Send me a message and let's talk.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:isaacgaius1999@gmail.com" class="btn btn-primary">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email me
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-list reveal">
+          <a class="contact-item" href="mailto:isaacgaius1999@gmail.com">
+            <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><small>Email</small><span class="value">isaacgaius1999@gmail.com</span></span>
+          </a>
+          <a class="contact-item" href="tel:+2349032683755">
+            <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span><small>Phone</small><span class="value">+234 903 268 3755</span></span>
+          </a>
+          <div class="contact-item">
+            <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <span><small>Location</small><span class="value">Ugbowo, Edo State, Nigeria</span></span>
+          </div>
+          <div class="socials">
+            <a class="social" href="https://www.linkedin.com/in/isaac-gaius-344b59221/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a class="social" href="https://twitter.com/gaiushighzik" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="#i-twitter"/></svg></a>
+            <a class="social" href="https://www.instagram.com/gaiushigh_zeek/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Isaac Gaius. All rights reserved.</span>
+      <a href="#home">Back to top ↑</a>
     </div>
-  </section><!-- End Portfolio Section -->
+  </footer>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Get In Touch</h2>
-        <p>Let's Connect & Collaborate</p>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="contact-box modern-contact">
-            <div class="contact-icon">
-              <i class="bx bx-envelope"></i>
-            </div>
-            <h3>Email</h3>
-            <p class="contact-detail">isaacgaius1999@gmail.com</p>
-            <a href="mailto:isaacgaius1999@gmail.com" class="contact-link">Send Email</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="contact-box modern-contact">
-            <div class="contact-icon">
-              <i class="bx bx-phone-call"></i>
-            </div>
-            <h3>Phone</h3>
-            <p class="contact-detail">+234 903 2683755</p>
-            <a href="tel:+2349032683755" class="contact-link">Call Now</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="contact-box modern-contact">
-            <div class="contact-icon">
-              <i class="bx bx-share-alt"></i>
-            </div>
-            <h3>Follow Me</h3>
-            <p class="contact-detail mb-3">Connect on social media</p>
-            <div class="social-links-contact">
-              <a href="https://twitter.com/gaiushighzik" class="social-btn twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://www.instagram.com/gaiushigh_zeek/" class="social-btn instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/isaac-gaius-344b59221/" class="social-btn linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Contact Section -->
-
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
